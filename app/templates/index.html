@@ -17,6 +17,14 @@
         <input type="date" id="end_date" name="end_date" required>
         <br>
         <button type="submit">Analyze</button>
+
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+        {% if chart %}
+            <div>{{ chart|safe }}</div>
+        {% endif %}
+
     </form>
     <div>
         {{ chart|safe }}
