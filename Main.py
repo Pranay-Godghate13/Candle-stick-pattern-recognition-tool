@@ -1,7 +1,7 @@
 import pandas as pd
-from Fetch_data import fetch_data, preprocess_data
-from Patterns import is_hammer, is_doji, is_engulfing
-from Visualize import visualize_patterns
+from app.Fetch_data import fetch_data, preprocess_data
+from app.Patterns import is_hammer, is_doji, is_engulfing
+from app.Visualize import visualize_patterns
 
 # Function to fetch data from fetch_data function for given date.
 df = fetch_data("AAPL", "2023-01-01", "2023-01-31")
